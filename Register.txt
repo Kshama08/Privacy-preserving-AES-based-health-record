@@ -1,0 +1,24 @@
+package inter;
+import bean.Adminbean;
+import bean.Chat_store_bean;
+import bean.Filebean;
+import bean.Logbean;
+import bean.Patientlogbean;
+import bean.Patientregbean;
+import bean.Regbean;
+import bean.Requestbean;
+import bean.Searchbean;
+import bean.Sharebean;
+public interface Reginter {
+public int regist(Regbean bb);
+public boolean log(Logbean ll);
+public int patientregister(Patientregbean prb);
+public boolean Patientlog(Patientlogbean pr);
+public boolean doctorsearch(Searchbean sb);
+public int chatstorage(Chat_store_bean cb);
+public int fileup(Filebean b);
+public int sharepage(Sharebean sbb);
+public int Request(Requestbean rbb);
+public int adminpage(Adminbean abb);
+public String getpublickey(String filename);
+}
